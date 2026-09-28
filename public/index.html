@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FaceSwipe AI</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header><h1>✨ FaceSwipe AI</h1><p>Image → AI Video</p></header>
+<main>
+<section class="card">
+  <div class="top"><b>Credits: <span id="credits">10</span></b><button id="login">Login</button></div>
+  <label class="drop" for="image"><span>📸</span><b>Image upload karein</b><small>JPG, PNG, WEBP</small></label>
+  <input id="image" type="file" accept="image/*" hidden>
+  <img id="preview" class="preview" alt="Preview">
+  <label>Prompt (optional)<textarea id="prompt" placeholder="Example: gentle face movement, cinematic camera"></textarea></label>
+  <button id="generate" class="primary">🎬 Generate Video (1 credit)</button>
+  <p id="status">Image upload karke Generate dabayein.</p>
+</section>
+
+<section class="card">
+<h2>🎥 Result</h2>
+<video id="result" controls playsinline></video>
+<a id="download" class="secondary" download="faceswipe-video.webm">⬇️ Download</a>
+</section>
+
+<section class="card ad-slot"><b>Advertisement</b><p>Yahan approved ad network ka ad code lagaya ja sakta hai.</p></section>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>
